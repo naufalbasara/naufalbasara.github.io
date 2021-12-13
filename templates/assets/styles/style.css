@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+
+* {
+  margin: 0;
+  top: 0;
+  box-sizing: border-box;
+  font-family: "Overpass", sans-serif;
+  scroll-behavior: smooth;
+}
+::selection {
+  background: #19e3a0;
+}
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  display: none;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  display: none;
+}
+#navbar {
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 768px) {
+  #body {
+    margin-top: 20px;
+  }
+  #social .social {
+    margin-right: 20px;
+    margin-bottom: 20px;
+  }
+}
+#home {
+  min-height: 100vh;
+  overflow: hidden;
+  /* background-image: url("/assets/img/home-cover.png");
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: 0px 50px; */
+}
+a {
+  text-decoration: none;
+  color: inherit;
+  width: initial;
+}
+.col-md-4 img.img-fluid {
+  margin-top: 20px;
+}
+.name {
+  background: -webkit-linear-gradient(#19e3a0, #0ee351);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.cursor {
+  display: inline-block;
+  width: 5px;
+  background-color: rgba(11, 255, 105, 0.89);
+  animation: blink 0.6s linear alternate infinite;
+}
+.typing {
+  animation: none;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.social:hover {
+  color: #19e3a0;
+  cursor: nesw-resize;
+}
