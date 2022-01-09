@@ -29,15 +29,6 @@
   display: flex;
   justify-content: space-between;
 }
-@media (max-width: 768px) {
-  #body {
-    margin-top: 20px;
-  }
-  #social .social {
-    margin-right: 20px;
-    margin-bottom: 20px;
-  }
-}
 #home {
   min-height: 100vh;
   overflow: hidden;

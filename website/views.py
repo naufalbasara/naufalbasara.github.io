@@ -2,7 +2,14 @@ from django.http import HttpResponse
 from django.shortcuts import render
 
 def index(request):
-    return render(request, 'index.html')
-
+    context = {
+        'title': 'Home',
+        'img': 'img/Naufal_Basara.png'
+    }
+    return render(request, 'index.html', context)
+    
 def contact(request):
-    return HttpResponse("Contact Me!")
+    context = {
+        'title': 'Contact',
+    }
+    return render(request, 'contact.html', context)
