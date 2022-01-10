@@ -4,5 +4,6 @@ from django.shortcuts import render
 def index(request):
     context = {
         'title': 'About',
+        'img': 'img/Naufal_Basara.png'
     }
     return render(request, 'about/index.html', context)

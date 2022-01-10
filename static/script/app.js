@@ -1,6 +1,6 @@
-const content = ["Hello There!", "Ahoj!", "Halo!", "Hej med dig!", "Hei siellä!", "Ciao!", "Bonjour!", "Hola!", "Привіт!"];
-const typedText = document.querySelector(".typed-text");
-const cursor = document.querySelector(".row .cursor");
+const content = ["Hello World!", "Ahoj!", "Halo!", "Hej med dig!", "Hei siellä!", "Ciao!", "Bonjour!", "Hola!", "Привіт!"];
+const typedText = document.querySelector("#typed-text");
+const cursor = document.querySelector("#cursor");
 let charIndex = 0;
 let typeContentIndex = 0;
 
@@ -33,5 +33,5 @@ const erase = () => {
 };
 
 document.addEventListener("DOMContentLoaded", function () {
-  setTimeout(type, 2000);
+  setTimeout(type, 1000);
 });
