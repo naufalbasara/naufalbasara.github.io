@@ -12,3 +12,9 @@ def contact(request):
         'title': 'Contact',
     }
     return render(request, 'contact.html', context)
+
+def page_not_found_view(request, exception):
+    context = {
+        'title': '404'
+    }
+    return render(request, '404.html', context, status=404)

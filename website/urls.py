@@ -26,3 +26,4 @@ urlpatterns = [
     path('about/', include('about.urls')),
     path('contact/', views.contact),
 ]
+handler404 = "website.views.page_not_found_view"

@@ -10,7 +10,7 @@
   scroll-behavior: smooth;
 }
 ::selection {
-  background: #19e3a0;
+  background: #15bb84;
 }
 /* width */
 ::-webkit-scrollbar {
@@ -33,22 +33,39 @@
 #base {
   min-height: 80vh;
 }
+
+/* elements */
 #block {
   width: 200px;
   transform: rotate(-110deg);
   z-index: -2;
   background-color: rgba(7, 204, 83, 0.89);
+  opacity: 0.5;
 }
 #block-2 {
   width: 100px;
   transform: rotate(-30deg);
   z-index: -2;
   background-color: rgba(7, 204, 83, 0.89);
+  opacity: 0.5;
 }
+#block-3 {
+  width: 50px;
+  transform: rotate(-90deg);
+  z-index: -2;
+  background-color: rgba(7, 204, 83, 0.89);
+  top: 50%;
+  right: 25%;
+}
+/* elements */
+
 .hoverStrong:hover {
   color: #19e3a0;
   cursor: nesw-resize;
   border-bottom: 1px solid #0ee351;
+}
+.Strong {
+  color: #19e3a0;
 }
 .typed-text {
   color: #19e3a0;
@@ -89,4 +106,41 @@ a {
 .social:hover {
   color: #19e3a0;
   cursor: nesw-resize;
+}
+
+@media only screen and (min-width: 576px) {
+  .cardLeft {
+    background-color: #212529;
+    transition: 0.3s;
+    transform: skewX(10deg);
+    transform: skewY(-10deg);
+    border: 1px solid rgba(190, 190, 190, 0.438);
+  }
+  .cardRight {
+    background-color: #212529;
+    transition: 0.3s;
+    transform: skewX(-10deg);
+    transform: skewY(10deg);
+    border: 1px solid rgba(190, 190, 190, 0.438);
+  }
+  .cardLeft:hover {
+    background-color: #309c78;
+    transition: 0.3s;
+    transform: scale(1.5) translateX(2.5rem);
+    z-index: 1;
+    cursor: nesw-resize;
+  }
+  .cardRight:hover {
+    background-color: #309c78;
+    transition: 0.3s;
+    transform: scale(1.5) translateX(-2.5rem);
+    z-index: 1;
+    cursor: nesw-resize;
+  }
+}
+.cardLeft {
+  background-color: #212529;
+}
+.cardRight {
+  background-color: #212529;
 }
