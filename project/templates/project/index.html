@@ -1,120 +1,51 @@
 {% extends 'layout/base.html' %} {% load static %} {% block content %}
 <section id="base" class="container d-flex flex-column align-items-sm-center justify-content-center text-light mt-sm-5">
-  <h1 class="Strong" align="left">Project</h1>
-  <!-- website dev section -->
-  <h2 class="mb-sm-3">
-    Website Development
-    <hr />
-  </h2>
+  <h1 class="Strong" align="left">Project<span class="cursor ms-1 mb-1">&nbsp;</span></h1>
 
   {% comment %} first row {% endcomment %}
   <div class="row mt-sm-5">
-    <div class="col-sm-6">
+    <div class="col-md-6">
       {% comment %} card 1 {% endcomment %}
-      <div class="card mb-3 cardLeft" style="max-width: 540px">
-        <div class="row g-0">
-          <div class="col-md-4">
-            <img src="https://source.unsplash.com/K4mSJ7kc0As/600x800" class="img-fluid rounded-start" alt="..." />
-          </div>
-          <div class="col-md-8">
-            <div class="card-body">
-              <h5 class="card-title">Benefits Web App</h5>
-              <p class="card-text">Benefits database web application developed in order to ease the administration process of ITS Tangerang regional forum.</p>
-              <p class="card-text"><small class="text-muted">24 December 2021</small></p>
-              <a href="/project/benefits" class="btn btn-sm btn-primary"
-                >View Project<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
-                  <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" /></svg
-              ></a>
-            </div>
-          </div>
+      <div class="card cardHover h-100">
+        <img src="{% static 'img/benefits/benefits.png' %}" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Benefits Web App</h5>
+          <p class="card-text">Benefits database web application developed in order to ease the administration process of ITS Tangerang regional forum.</p>
+        </div>
+        <div class="card-footer">
+          <a class="hoverStrong" href="/project/benefits">
+            View Project
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+            </svg>
+          </a>
+          <p><small class="text-muted">24 December 2021</small></p>
         </div>
       </div>
       {% comment %} end card 1 {% endcomment %}
     </div>
 
-    <div class="col-sm-6">
+    <div class="col-md-6">
       {% comment %} card 2 {% endcomment %}
-      <div class="card mb-3 cardRight" style="max-width: 540px">
-        <div class="row g-0">
-          <div class="col-md-4">
-            <img src="https://source.unsplash.com/K4mSJ7kc0As/600x800" class="img-fluid rounded-start" alt="..." />
-          </div>
-          <div class="col-md-8">
-            <div class="card-body">
-              <h5 class="card-title">Benefits Web App</h5>
-              <p class="card-text">Benefits database web application developed in order to ease the administration process of ITS Tangerang regional forum.</p>
-              <p class="card-text"><small class="text-muted">24 December 2021</small></p>
-              <a href="/project/benefits" class="btn btn-sm btn-primary"
-                >View Project<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
-                  <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" /></svg
-              ></a>
-            </div>
-          </div>
+      <div class="card cardHover h-100">
+        <img src="{% static 'img/js-mini/thumbnail.png' %}" class="card-img-top img-fluid img" alt="JS-Mini" />
+        <div class="card-body">
+          <h5 class="card-title">Javascript Mini Project</h5>
+          <p class="card-text">Simple mini Javascript projects made to fulfill college task.</p>
+        </div>
+        <div class="card-footer">
+          <a class="hoverStrong" href="/project/js-mini">
+            View Project
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+            </svg>
+          </a>
+          <p><small class="text-muted">October 2021</small></p>
         </div>
       </div>
       {% comment %} end card 2 {% endcomment %}
     </div>
   </div>
   {% comment %} end first row {% endcomment %}
-  <!-- website dev section -->
-
-  <!-- data science section -->
-  <h2 class="mb-sm-3">
-    Data Science
-    <hr />
-  </h2>
-
-  {% comment %} first row {% endcomment %}
-  <div class="row mt-sm-5">
-    <div class="col-sm-6">
-      {% comment %} card 1 {% endcomment %}
-      <div class="card mb-3 cardLeft" style="max-width: 540px">
-        <div class="row g-0">
-          <div class="col-md-4">
-            <img src="https://source.unsplash.com/K4mSJ7kc0As/600x800" class="img-fluid rounded-start" alt="..." />
-          </div>
-          <div class="col-md-8">
-            <div class="card-body">
-              <h5 class="card-title">Coming Soon</h5>
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <p class="card-text"><small class="text-muted">Soon..</small></p>
-              <a href="#" target="_blank" class="btn btn-sm btn-primary">
-                View Project
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
-                  <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" /></svg
-              ></a>
-            </div>
-          </div>
-        </div>
-      </div>
-      {% comment %} end card 1 {% endcomment %}
-    </div>
-
-    <div class="col-sm-6">
-      {% comment %} card 2 {% endcomment %}
-      <div class="card mb-3 cardRight" style="max-width: 540px">
-        <div class="row g-0">
-          <div class="col-md-4">
-            <img src="https://source.unsplash.com/K4mSJ7kc0As/600x800" class="img-fluid rounded-start" alt="..." />
-          </div>
-          <div class="col-md-8">
-            <div class="card-body">
-              <h5 class="card-title">Coming Soon</h5>
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <p class="card-text"><small class="text-muted">Soon..</small></p>
-              <a href="#" target="_blank" class="btn btn-sm btn-primary">
-                View Project
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
-                  <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" /></svg
-              ></a>
-            </div>
-          </div>
-        </div>
-      </div>
-      {% comment %} end card 2 {% endcomment %}
-    </div>
-  </div>
-  {% comment %} end first row {% endcomment %}
-  <!-- data science section -->
 </section>
 {% endblock content %}

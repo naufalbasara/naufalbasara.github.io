@@ -83,7 +83,7 @@ a {
 .cursor {
   display: inline-block;
   width: 5px;
-  background-color: rgba(11, 255, 105, 0.89);
+  background-color: #19e3a0;
   animation: blink 0.6s linear alternate infinite;
 }
 .typing {
@@ -101,46 +101,36 @@ a {
     opacity: 0;
   }
 }
-
+.icon {
+  border: 1px solid rgb(83, 83, 83);
+  border-radius: 10px;
+  width: 32px;
+  height: 32px;
+}
 .social:hover {
   color: #19e3a0;
   cursor: nesw-resize;
 }
 
 @media only screen and (min-width: 576px) {
-  .cardLeft {
-    background-color: #212529;
+  .blockHover:hover {
+    background-color: rgb(70, 70, 70);
+    border-radius: 1rem;
+  }
+  .cardHover {
+    background-color: inherit;
     transition: 0.3s;
-    transform: skewX(10deg);
-    transform: skewY(-10deg);
     border: 1px solid rgba(190, 190, 190, 0.438);
   }
-  .cardRight {
-    background-color: #212529;
-    transition: 0.3s;
-    transform: skewX(-10deg);
-    transform: skewY(10deg);
-    border: 1px solid rgba(190, 190, 190, 0.438);
-  }
-  .cardLeft:hover {
-    background-color: #309c78;
-    transition: 0.3s;
-    transform: scale(1.5) translateX(2.5rem);
+  .cardHover:hover {
+    box-shadow: 0px 0px 1px 1px#309c78;
+    transition: 0.2s;
+    transform: translateY(-0.2rem);
     z-index: 1;
-    cursor: nesw-resize;
-  }
-  .cardRight:hover {
-    background-color: #309c78;
-    transition: 0.3s;
-    transform: scale(1.5) translateX(-2.5rem);
-    z-index: 1;
-    cursor: nesw-resize;
   }
 }
-.cardLeft {
-  background-color: #212529;
-}
-.cardRight {
+
+.cardHover {
   background-color: #212529;
 }
 .article {
