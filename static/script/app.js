@@ -1,3 +1,4 @@
+// typing
 const content = ["Hello World!", "Ahoj!", "Halo!", "Hej med dig!", "Hei siellä!", "Ciao!", "Bonjour!", "Hola!", "Привіт!"];
 const typedText = document.querySelector("#typed-text");
 const cursor = document.querySelector("#cursor");
@@ -31,7 +32,6 @@ const erase = () => {
     setTimeout(type, 500);
   }
 };
-
 document.addEventListener("DOMContentLoaded", function () {
   setTimeout(type, 1000);
 });

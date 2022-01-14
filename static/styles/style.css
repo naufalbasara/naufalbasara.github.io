@@ -7,6 +7,7 @@
   box-sizing: border-box;
   font-family: "Ubuntu Mono", "Overpass", monospace, sans-serif;
   scroll-behavior: smooth;
+  color: inherit;
 }
 ::selection {
   background: #15bb84;
@@ -29,10 +30,12 @@
   display: flex;
   justify-content: space-between;
 }
+a.nav-link {
+  color: black;
+}
 #base {
   min-height: 80vh;
 }
-
 /* elements */
 #block {
   width: 200px;
@@ -62,6 +65,11 @@
   color: #19e3a0;
   cursor: nesw-resize;
   border-bottom: 1px solid #0ee351;
+}
+.hoverStrongStay:hover {
+  color: #19e3a0;
+  transition: 0.1s;
+  cursor: pointer;
 }
 .Strong {
   color: #19e3a0;
@@ -110,12 +118,18 @@ a {
 .social:hover {
   color: #19e3a0;
   cursor: nesw-resize;
+  transition: 0.1s;
 }
 
 @media only screen and (min-width: 576px) {
-  .blockHover:hover {
-    background-color: rgb(70, 70, 70);
+  .blockHover {
     border-radius: 1rem;
+    transition: 0.1s;
+  }
+  .blockHover:hover {
+    background-color: rgb(80, 77, 77);
+    border-radius: 1rem;
+    transition: 0.1s;
   }
   .cardHover {
     background-color: inherit;
