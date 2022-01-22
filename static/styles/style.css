@@ -51,14 +51,6 @@ a.nav-link {
   background-color: rgba(7, 204, 83, 0.89);
   opacity: 0.5;
 }
-#block-3 {
-  width: 50px;
-  transform: rotate(-90deg);
-  z-index: -2;
-  background-color: rgba(7, 204, 83, 0.89);
-  top: 50%;
-  right: 25%;
-}
 /* elements */
 
 .hoverStrong:hover {
@@ -120,7 +112,9 @@ a {
   cursor: nesw-resize;
   transition: 0.1s;
 }
-
+.card.cardHover {
+  background-color: inherit;
+}
 @media only screen and (min-width: 576px) {
   .blockHover {
     border-radius: 1rem;
